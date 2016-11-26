@@ -91,7 +91,7 @@ function SideNavigation(el) {
      */
     function updatePosition() {
         requestAnimationFrame(function() {
-            var diff = Math.min(10, currentPosition - startPosition);
+            var diff = Math.min(0, currentPosition - startPosition);
             sidenav.style.transform = 'translateX(' + diff + 'px)';
         });
     }
